@@ -10,7 +10,11 @@ else if(a == 0)
 {
     if(b == 0 || c == 0)
     {
-        alert("numbers is 0");
+        alert("countless solutions");
+    }
+    else if (b == 0 || c != 0)
+    {
+        alert("no solutions!");
     }
     else
     {
@@ -18,13 +22,9 @@ else if(a == 0)
         alert(x);
     }
 }
-else if(b == 0 || c == 0)
-{
-    alert("x = 0");
-}
 else
 {
-    let D = Math.pow(2, b) - 4 * a * c;
+    let D = b * b - 4 * a * c;
     if (D > 0) 
     {
         let x1 = (-b + Math.sqrt(D)) / (2 * a);
